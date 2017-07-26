@@ -2,7 +2,9 @@
  * Created by willians on 24/7/17.
  */
 import React from 'react';
-import ReacrDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+
+import Application from './Application'
 
 
-reactDOM.render(<Application/>, document.getElementById('root'))
+ReactDOM.render(<Application/>, document.getElementById('root'))
