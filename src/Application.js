@@ -48,12 +48,12 @@ class Application extends Component {
                 <div className="header">
                     <h2>Connecting react to firebase</h2>
                 </div>
-                <div className="container-firebase">
-
-                </div>
+                <pre className="App--data">
+                    {JSON.stringify(this.state.data, null, 2)}
+                </pre>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" value={this.state.newData} onChange={this.handleChange} />
-                    <input type="submit" />
+                    <input className="waves-effect waves-light btn" type="submit" />
                 </form>
             </div>
         )
